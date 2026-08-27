@@ -2,10 +2,12 @@
 
 Every 待补充/TBD blank on the live site, where it appears, and which CONTENT-WISHLIST item supplies the answer. When material arrives, fill the blank on BOTH the Chinese page and its English mirror, then check it off here.
 
+> 2026-08-27: `FACTORY-FACTS.md` is now the master source of truth — update it first, then the site, then this tracker.
+
 | # | Blank | Where on the site | Filled by wishlist item |
 |---|---|---|---|
-| 1 | Facility area (m²) | Home — stats band | 2 |
-| 2 | Exact founding year | About — timeline | 1 |
+| 1 | ~~Facility area~~ → now TWO complex areas (manufacturing; processing/heat treatment) | Home stats band; About profile | 2 |
+| 2 | ~~Exact founding year~~ **FILLED 2026-08-27: May 1984** (+ founding story) | About — timeline; Home | ✓ done |
 | 3 | History milestones | About — timeline | 1 |
 | 4 | Equipment quantities + specs (all rows) | Equipment — equipment table | 6 |
 | 5 | CNC lathe / grinder / hobbing / etc. models | Equipment — equipment table | 6 |
@@ -21,6 +23,9 @@ Every 待补充/TBD blank on the live site, where it appears, and which CONTENT-
 | 15 | Logistics distances (highway/ports/airport) | Contact — note | 22 |
 | 16 | More facility photos (hobbing, inspection, people) | About — facility note | 16, 17 |
 | 17 | Product name confirmations (captions provisional) | Products — top note | 13 |
+| 18 | Heat-treatment processes offered + equipment | Equipment — lede + table last row | new (ask owner) |
+| 19 | Founder's name; manager/office headcount | not yet on site (in FACTORY-FACTS.md) | new (ask owner) |
+| 20 | Which complex the current photos show | PHOTO-INVENTORY context | new (ask owner) |
 
 ## Content that is LIVE but should be confirmed with the factory
 

@@ -74,3 +74,15 @@ Owner said "make it first, and add placeholder blanks where necessary" — game 
 - Owner reported the Chinese homepage hero showed plain navy while the English one showed the machinery photo. Cause: hero photo was passed as a CSS variable from each page into the shared stylesheet's `.hero` rule — browsers resolve the relative `url()` against the *stylesheet's* folder (`css/`), so the Chinese page's `images/…` path 404'd while the English `../images/…` path worked by coincidence.
 - Fix (commit 47b04e5): full `background-image` (gradient + photo) now declared in each homepage's own `<style>` block, where relative paths resolve against the page. Shared CSS keeps only color/size/position.
 - Redeployed gh-pages (subtree split + force push), Pages rebuilt, verified the corrected style and image are live. Lesson for future pages: never put relative `url()` values into CSS variables consumed by the shared stylesheet.
+
+## 2026-08-27 — Session 1 (continued): New facts from owner; FACTORY-FACTS.md created
+
+**New facts from owner:**
+- Founded **May 1984**; the first machine arrived the night the founder's eldest daughter was born (story now on both About timelines).
+- **50+ engineers**, managers NOT included in that count (supersedes profile's "50+ employees").
+- **Two large complexes**: a manufacturing complex and a processing/**heat-treatment** complex — square footage blanks left for both (owner will supply).
+- More information coming.
+
+**Created `FACTORY-FACTS.md`** — master source of truth: every known fact, each tagged with source ([card]/[profile]/[owner]/[photos]) and status, with fill-in blanks (complex areas, founder's name, manager headcount, heat-treatment processes, precision specs, etc.). Rule: facts update there FIRST, then the site (both languages), then PLACEHOLDERS.md.
+
+**Site updates applied (CN + EN):** hero kicker "Since 1984"; stats band → 1984 / 50+ engineers / output value / 2 complexes (areas TBD); About profile + timeline rewritten with May 1984, founding story, two complexes, engineer count; Equipment page now mentions the heat-treatment complex and has a heat-treatment equipment row (details TBD). PLACEHOLDERS.md updated (#2 filled; #18–20 added).
