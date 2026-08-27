@@ -65,10 +65,13 @@ a{color:var(--blue-dark)}
 /* ---------- hero ---------- */
 .hero{
   color:#fff;
-  background:
-    linear-gradient(rgba(11,42,66,.78),rgba(11,42,66,.62)),
-    var(--hero-img) center/cover no-repeat,
-    var(--blue-deep);
+  background-color:var(--blue-deep);
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  /* background-image (gradient + photo) is declared in each page's own
+     <style> block so the relative image path resolves against the page,
+     not this stylesheet's folder. */
 }
 .hero-inner{max-width:1100px;margin:0 auto;padding:88px 20px 72px}
 .hero .kicker{
