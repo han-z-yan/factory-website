@@ -78,7 +78,7 @@ Owner said "make it first, and add placeholder blanks where necessary" — game 
 ## 2026-08-27 — Session 1 (continued): New facts from owner; FACTORY-FACTS.md created
 
 **New facts from owner:**
-- Founded **May 1984**; the first machine arrived the night the founder's eldest daughter was born (story now on both About timelines).
+- Founded **May 1984**; the first machine arrived the night the founder's eldest child was born (story now on both About timelines; owner later corrected wording from "eldest daughter" → "eldest child" — fixed on site, facts doc, CN 第一个孩子).
 - **50+ engineers**, managers NOT included in that count (supersedes profile's "50+ employees").
 - **Two large complexes**: a manufacturing complex and a processing/**heat-treatment** complex — square footage blanks left for both (owner will supply).
 - More information coming.

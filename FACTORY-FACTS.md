@@ -22,7 +22,7 @@ The single source of truth for everything known about the company. Every fact is
 | Fact | Value | Source / status |
 |---|---|---|
 | Founded | **May 1984** | [owner 2026-08-27] confirmed |
-| Founding story | The company's first machine arrived on the night the founder's eldest daughter was born. | [owner 2026-08-27] confirmed — used on About page timeline |
+| Founding story | The company's first machine arrived on the night the founder's **eldest child** was born. (Owner corrected 2026-08-27: say "eldest child", not "eldest daughter".) | [owner 2026-08-27] confirmed — used on About page timeline |
 | Founder's name | ____________________ | [BLANK] |
 | Key milestones (expansions, major equipment purchases, first big customers) | ____________________ | [BLANK] (wishlist 1) |
 
