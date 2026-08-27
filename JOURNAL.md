@@ -68,3 +68,9 @@ Owner said "make it first, and add placeholder blanks where necessary" — game 
 - ⚠️ Process note: a `git reset --hard` during setup discarded an uncommitted journal entry (restored above from context). Lesson: commit journal edits promptly.
 - Still relevant: GitHub Pages can be slow from mainland China — fine for the English/US audience; revisit China-friendly hosting + real domain with wishlist item 21.
 - SEO consideration for next iteration: with US buyers searching in English, consider making an English landing/entry experience more prominent (e.g., root language chooser or English-first entry) — discuss with owner before restructuring.
+
+## 2026-08-27 — Session 1 (continued): Hero background bug fixed
+
+- Owner reported the Chinese homepage hero showed plain navy while the English one showed the machinery photo. Cause: hero photo was passed as a CSS variable from each page into the shared stylesheet's `.hero` rule — browsers resolve the relative `url()` against the *stylesheet's* folder (`css/`), so the Chinese page's `images/…` path 404'd while the English `../images/…` path worked by coincidence.
+- Fix (commit 47b04e5): full `background-image` (gradient + photo) now declared in each homepage's own `<style>` block, where relative paths resolve against the page. Shared CSS keeps only color/size/position.
+- Redeployed gh-pages (subtree split + force push), Pages rebuilt, verified the corrected style and image are live. Lesson for future pages: never put relative `url()` values into CSS variables consumed by the shared stylesheet.
