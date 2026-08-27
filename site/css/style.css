@@ -1,0 +1,209 @@
+/* Rugao Binbin Machinery — site stylesheet
+   Palette from the company business card: machine blue on white. */
+:root{
+  --blue:#1878C8;
+  --blue-dark:#0F5A9A;
+  --blue-deep:#0B3D66;
+  --ink:#1B2530;
+  --muted:#5A6B7A;
+  --ground:#F5F8FA;
+  --surface:#FFFFFF;
+  --line:#DCE4EA;
+  --tbd-bg:#FDF3E2;
+  --tbd-ink:#8A5A10;
+  --tbd-line:#E3C27E;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:-apple-system,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",Roboto,Arial,sans-serif;
+  line-height:1.7;
+  font-size:16px;
+}
+img{max-width:100%;display:block}
+a{color:var(--blue-dark)}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+
+/* ---------- header ---------- */
+.site-header{
+  background:var(--surface);
+  border-bottom:3px solid var(--blue);
+  position:sticky;top:0;z-index:50;
+}
+.header-inner{
+  max-width:1100px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.brand-mark{
+  width:44px;height:44px;flex:none;border-radius:8px;
+  background:linear-gradient(135deg,var(--blue),var(--blue-dark));
+  color:#fff;font-weight:800;font-size:24px;
+  display:flex;align-items:center;justify-content:center;
+  font-family:Georgia,"Times New Roman",serif;
+}
+.brand-text{line-height:1.25}
+.brand-text .cn{font-weight:700;font-size:17px;display:block}
+.brand-text .en{font-size:11.5px;color:var(--muted);letter-spacing:.05em;display:block}
+.site-nav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
+.site-nav a{
+  text-decoration:none;color:var(--ink);font-weight:500;font-size:15px;
+  padding:8px 12px;border-radius:6px;
+}
+.site-nav a:hover{background:var(--ground)}
+.site-nav a.active{color:var(--blue-dark);background:#EAF3FB;font-weight:700}
+.site-nav a.lang{
+  border:1.5px solid var(--blue);color:var(--blue-dark);
+  margin-left:8px;font-weight:700;padding:6px 14px;border-radius:999px;
+}
+.site-nav a.lang:hover{background:var(--blue);color:#fff}
+.site-nav a:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+
+/* ---------- hero ---------- */
+.hero{
+  color:#fff;
+  background:
+    linear-gradient(rgba(11,42,66,.78),rgba(11,42,66,.62)),
+    var(--hero-img) center/cover no-repeat,
+    var(--blue-deep);
+}
+.hero-inner{max-width:1100px;margin:0 auto;padding:88px 20px 72px}
+.hero .kicker{
+  font-size:14px;letter-spacing:.22em;text-transform:uppercase;
+  color:#BEDCF5;margin:0 0 14px;font-weight:600;
+}
+.hero h1{
+  font-size:clamp(30px,5.5vw,52px);line-height:1.2;margin:0 0 8px;
+  text-wrap:balance;font-weight:800;
+}
+.hero .sub{font-size:clamp(16px,2.4vw,21px);color:#DCEBF8;margin:0 0 8px;font-weight:500}
+.hero .slogan{font-size:15px;color:#A8CCEC;margin:0 0 30px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn{
+  display:inline-block;text-decoration:none;font-weight:700;font-size:16px;
+  padding:13px 28px;border-radius:8px;
+}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:#2B89D9}
+.btn-ghost{border:2px solid #BEDCF5;color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12)}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:2px}
+
+/* ---------- stats band ---------- */
+.stats{background:var(--surface);border-bottom:1px solid var(--line)}
+.stats-inner{
+  max-width:1100px;margin:0 auto;padding:26px 20px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;
+}
+.stat .n{
+  font-size:30px;font-weight:800;color:var(--blue-dark);
+  font-variant-numeric:tabular-nums;line-height:1.2;
+}
+.stat .l{font-size:14px;color:var(--muted)}
+
+/* ---------- sections ---------- */
+section.block{padding:56px 0}
+section.block.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.block h2{
+  font-size:clamp(23px,3.4vw,30px);margin:0 0 6px;font-weight:800;
+  text-wrap:balance;
+}
+.block h2 .en-sub{display:block;font-size:15px;color:var(--muted);font-weight:500;letter-spacing:.04em;margin-top:2px}
+.block .lede{color:var(--muted);max-width:760px;margin:0 0 30px;font-size:16.5px}
+.rule{width:56px;height:4px;background:var(--blue);border-radius:2px;margin:14px 0 22px}
+
+/* process tiles */
+.process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.process{
+  background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  padding:20px 16px;text-align:center;
+}
+section.block.alt .process{background:var(--ground)}
+.process .zh{font-size:26px;font-weight:800;color:var(--blue-dark);display:block}
+.process .en{font-size:13px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
+
+/* cards */
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:20px}
+.card{
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  overflow:hidden;display:flex;flex-direction:column;
+}
+.card img{width:100%;height:210px;object-fit:cover}
+.card .card-body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.card h3{margin:0;font-size:18px;font-weight:700}
+.card p{margin:0;font-size:14.5px;color:var(--muted)}
+.card a.more{font-weight:700;font-size:14.5px;text-decoration:none;margin-top:6px}
+.card a.more:hover{text-decoration:underline}
+
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.gallery figure{
+  margin:0;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+  overflow:hidden;
+}
+.gallery img{width:100%;height:200px;object-fit:cover}
+.gallery figcaption{padding:12px 14px;font-size:14px;color:var(--ink);line-height:1.55}
+
+/* tables */
+.table-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:15px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top}
+th{background:#EAF3FB;color:var(--blue-deep);font-size:14px;letter-spacing:.03em;white-space:nowrap}
+tr:last-child td{border-bottom:none}
+td .sub{color:var(--muted);font-size:13.5px}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--blue);display:flex;flex-direction:column;gap:22px}
+.timeline li{position:relative;padding-left:26px}
+.timeline li::before{
+  content:"";position:absolute;left:-9px;top:8px;width:15px;height:15px;border-radius:50%;
+  background:var(--surface);border:4px solid var(--blue);
+}
+.timeline .when{font-weight:800;color:var(--blue-dark)}
+
+/* info list (contact) */
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.info-card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px 22px}
+.info-card h3{margin:0 0 8px;font-size:16px;color:var(--blue-deep);letter-spacing:.03em}
+.info-card p{margin:0 0 4px;font-size:16px}
+.info-card .big{font-size:20px;font-weight:800;font-variant-numeric:tabular-nums}
+.info-card .sub{color:var(--muted);font-size:14px}
+
+/* placeholders */
+.tbd{
+  background:var(--tbd-bg);color:var(--tbd-ink);
+  border-bottom:2px dashed var(--tbd-line);
+  padding:0 6px;border-radius:4px;font-size:.92em;white-space:nowrap;
+}
+.tbd-box{
+  border:2px dashed var(--tbd-line);background:var(--tbd-bg);color:var(--tbd-ink);
+  border-radius:12px;padding:26px 22px;text-align:center;font-size:15px;
+}
+.tbd-box strong{display:block;font-size:16.5px;margin-bottom:4px}
+.note{
+  background:#EAF3FB;border-left:4px solid var(--blue);border-radius:0 8px 8px 0;
+  padding:12px 16px;font-size:14.5px;color:var(--blue-deep);margin:22px 0 0;
+}
+
+/* footer */
+.site-footer{background:var(--blue-deep);color:#C9DEF0;margin-top:64px}
+.footer-inner{
+  max-width:1100px;margin:0 auto;padding:40px 20px 30px;
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;
+}
+.site-footer h4{color:#fff;margin:0 0 10px;font-size:16px}
+.site-footer p{margin:0 0 6px;font-size:14.5px}
+.site-footer a{color:#BEDCF5}
+.footer-base{
+  border-top:1px solid rgba(255,255,255,.18);
+  padding:14px 20px;text-align:center;font-size:13px;color:#8FB6D8;
+}
+
+@media (max-width:640px){
+  .hero-inner{padding:60px 20px 52px}
+  .card img{height:180px}
+  section.block{padding:40px 0}
+}
