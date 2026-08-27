@@ -52,3 +52,19 @@ Owner said "make it first, and add placeholder blanks where necessary" — game 
 - Owner reviews the site locally (`site/index.html`) and gives feedback.
 - Materials arrive from wishlist → fill blanks in BOTH language versions, check off in `PLACEHOLDERS.md`.
 - Later: hosting/domain decision (wishlist item 21), then deploy.
+
+## 2026-08-27 — Session 1 (continued): Pushed to GitHub
+
+- Repo created and pushed: **https://github.com/han-z-yan/factory-website**, branch `main`, commit 185934d. Whole project folder is in the repo: site, docs, and all original photos.
+- Repo-local git identity: han-z-yan / han-z-yan@users.noreply.github.com. First HTTPS push hit a broken pipe (49MB); succeeded after raising `http.postBuffer`.
+
+## 2026-08-27 — Session 1 (continued): Repo public + site LIVE on GitHub Pages
+
+**Audience update from owner:** now ~half Chinese customers, ~half American/English buyers searching for a new supplier. English version is a co-equal audience, not secondary. (House rule 2 amended accordingly.)
+
+- Repo flipped to **public**.
+- **Site is live: https://han-z-yan.github.io/factory-website/** (Chinese) and **…/en/** (English). Verified 200s on pages, CSS, and images in both languages.
+- Deploy mechanism: `gh-pages` branch generated from `site/` via `git subtree split --prefix=site` (the gh CLI token lacks `workflow` scope, so an Actions workflow couldn't be pushed; branch-based Pages needs no extra scope). **To redeploy after editing `site/`:** commit to main, then `git subtree split --prefix=site -b gh-pages-new && git push -f origin gh-pages-new:gh-pages && git branch -D gh-pages-new` (or refresh the existing local gh-pages branch).
+- ⚠️ Process note: a `git reset --hard` during setup discarded an uncommitted journal entry (restored above from context). Lesson: commit journal edits promptly.
+- Still relevant: GitHub Pages can be slow from mainland China — fine for the English/US audience; revisit China-friendly hosting + real domain with wishlist item 21.
+- SEO consideration for next iteration: with US buyers searching in English, consider making an English landing/entry experience more prominent (e.g., root language chooser or English-first entry) — discuss with owner before restructuring.
