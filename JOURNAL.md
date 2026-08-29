@@ -86,3 +86,16 @@ Owner said "make it first, and add placeholder blanks where necessary" — game 
 **Created `FACTORY-FACTS.md`** — master source of truth: every known fact, each tagged with source ([card]/[profile]/[owner]/[photos]) and status, with fill-in blanks (complex areas, founder's name, manager headcount, heat-treatment processes, precision specs, etc.). Rule: facts update there FIRST, then the site (both languages), then PLACEHOLDERS.md.
 
 **Site updates applied (CN + EN):** hero kicker "Since 1984"; stats band → 1984 / 50+ engineers / output value / 2 complexes (areas TBD); About profile + timeline rewritten with May 1984, founding story, two complexes, engineer count; Equipment page now mentions the heat-treatment complex and has a heat-treatment equipment row (details TBD). PLACEHOLDERS.md updated (#2 filled; #18–20 added).
+
+## 2026-08-28 — Session 1 (continued): v2 redesign built with installed design skills
+
+Owner installed the Leonxlnx/taste-skill pack (13 design skills, gitignored from the repo) and asked for "another copy and a complete redesign using these skills," keeping the original brief (informative, detail-oriented, extremely clear navigation, clean and professional; audience now half CN / half EN-speaking buyers).
+
+**Design read (per design-taste-frontend protocol):** trust-first B2B manufacturer site → Swiss industrial print aesthetic (light archetype from industrial-brutalist-ui skill), vanilla CSS. Dials: VARIANCE 6 / MOTION 4 / DENSITY 5. Single light theme (print-emulating exception). Brand blue kept as the only accent (redesign brand-fidelity rule); square corners everywhere; monospace for all numbers/data; hairline compartment grids (gap:1px technique); real-photo hero with scrim; scroll reveals via IntersectionObserver honoring prefers-reduced-motion. Fonts SELF-HOSTED (Archivo variable + IBM Plex Mono latin woff2, 55KB total, in `site/v2/fonts/`) so no Google Fonts dependency (blocked/slow in China). Skill compliance: zero em-dashes, eyebrow rationing, no 3-equal-card rows, varied section layout families, one CTA intent per page ("联系我们/Contact us" appears once per page in the band), no fake data (real serial number 8S006149A09JYR23072720 used as texture).
+
+**Where:** `site/v2/` (CN) + `site/v2/en/` (EN) — 10 pages + own css/js/fonts, reusing `../images/`. Deployed alongside v1 for comparison:
+- v1 (current): https://han-z-yan.github.io/factory-website/
+- **v2 (redesign): https://han-z-yan.github.io/factory-website/v2/** (EN: /v2/en/)
+All content parity with v1 incl. May 1984 story, 50+ engineers, two complexes, all 待补充/TBD placeholders (restyled as mono [ ] chips). QA: zero missing assets, zero em-dashes, both versions live (verified 200s).
+
+**Pending owner decision:** pick v2 (promote to root), keep v1, or request changes.
